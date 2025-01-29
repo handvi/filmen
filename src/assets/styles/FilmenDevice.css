@@ -1,0 +1,88 @@
+.filmen-experience {
+  background: linear-gradient(to bottom left, #965c46, #121212);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.filmen-experience h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filmen-experience p {
+  font-size: 1.2rem;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.device-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.device-icon {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  flex: 1 0 21%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  margin-top: 0;
+}
+
+.device-icon i {
+  font-size: 4rem;
+  color: #FF4500;
+  margin-bottom: 10px;
+}
+
+.device-icon h5 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.device-icon p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.device-icon:hover {
+  transform: translateY(-10px);
+  background-color: #FF4500;
+}
+
+.device-icon:hover i {
+  color: white;
+}
+
+.device-icon:hover h5,
+.device-icon:hover p {
+  color: white;
+}
+
+button {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  background-color: #FF4500;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63946;
+}

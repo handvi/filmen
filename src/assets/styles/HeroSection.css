@@ -46,9 +46,9 @@
   padding: 12px 30px;
   font-size: 1.2rem;
   text-decoration: none;
-  background-color: #ff5722; /* Warna background yang konsisten dengan logo */
-  color: white; /* Warna font putih */
-  border-radius: 25px; /* Membuat tombol sedikit oval */
+  background-color: #ff5722; 
+  color: white; 
+  border-radius: 25px; 
   position: relative;
   overflow: hidden;
   font-weight: bold;

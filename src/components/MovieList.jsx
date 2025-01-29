@@ -1,9 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from 'react';
-import { fetchMoviesByCategory } from '../api/movieApi';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import '../assets/styles/MovieList.css';
+import React, { useState, useEffect } from "react";
+import { fetchMoviesByCategory } from "../api/movieApi";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import "../assets/styles/MovieList.css";
 
 
 function MovieList() {
@@ -14,7 +14,7 @@ function MovieList() {
     movie: [],
   });
 
-  const categories = ['horror', 'action', 'series', 'movie'];
+  const categories = ["horror", "action", "series", "movie"];
 
   useEffect(() => {
     const getMovies = async () => {
