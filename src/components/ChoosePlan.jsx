@@ -1,11 +1,9 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react";
 import "../assets/styles/ChoosePlan.css";
 
 const ChoosePlan = () => {
-  const [isMonthly, setIsMonthly] = useState(true); // Default to Monthly plan
-
+  const [isMonthly, setIsMonthly] = useState(true); 
   const togglePlan = () => {
     setIsMonthly(!isMonthly);
   };
@@ -13,18 +11,18 @@ const ChoosePlan = () => {
   return (
     <div className="choose-plan-container">
       <div className="choose-plan-content">
-        <h2>Choose the plan that"s right for you</h2>
-        <p>Join Filmen and select from our flexible subscription options
-        tailored to suit your viewing preferences. Get ready for non-stop
-        entertainment!</p>
-
-        {/* Switch untuk Monthly / Yearly */}
-        <p>{isMonthly ? "Monthly" : "Yearly"} Plan</p>
+        <h2>Choose the plan thats right for you</h2>
+        <p>
+          Join Filmen and select from our flexible subscription options tailored
+          to suit your viewing preferences. Get ready for non-stop entertainment!
+        </p>
         <div className="plan-switch">
+          <span className="plan-label">Monthly</span>
           <label className="switch">
-            <input type="checkbox" checked={isMonthly} onChange={togglePlan} />
+            <input type="checkbox" checked={!isMonthly} onChange={togglePlan} />
             <span className="slider"></span>
           </label>
+          <span className="plan-label">Yearly</span>
         </div>
 
         {/* Cards */}
