@@ -8,12 +8,19 @@ const NavbarUp = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let timer;
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        setScrolled(window.scrollY > 50);
+      }, 100);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timer) clearTimeout(timer);
+    };
   }, []);
 
   return (

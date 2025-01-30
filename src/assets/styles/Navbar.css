@@ -1,42 +1,52 @@
-.logo-text {
-    font-size: 1.2rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff8c00, #ff4500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
+.custom-navbar {
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+  background-color: transparent;
+  padding: 15px 0;
+}
 
-/* bagian menu  */
+.custom-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(5px);
+  padding: 10px 0;
+}
+
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff8c00, #ff4500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .nav-link-custom {
-    color: white !important;
-    font-size: 1.2rem;
-    position: relative;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-link-custom::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -4px;
-    width: 0;
-    height: 3px;
-    background: linear-gradient(45deg, #ff8c00, #ff4500);
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);
-  }
-  
-  .nav-link-custom:hover::after {
-    width: 100%;
-  }
-  
-  .nav-icon {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .nav-icon:hover {
-    filter: drop-shadow(0 0 5px #ff8c00);
-  }
-  
+  color: white !important;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(45deg, #ff8c00, #ff4500);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.nav-icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+  filter: drop-shadow(0 0 5px #ff8c00);
+}
